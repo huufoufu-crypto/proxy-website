@@ -13,12 +13,10 @@ html {
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #0f0f0f;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
   color: white;
-}
-
-nav {
-  position: fixed;
+}  
+   positio: fixed;
   top: 0;
   width: 100%;
   background: rgba(0,0,0,0.6);
@@ -44,11 +42,23 @@ h1 {
 }
 
 .card {
-  background: rgba(255,255,255,0.08);
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid rgba(255,255,255,0.2);
   padding: 20px;
   margin: 15px 0;
-  border-radius: 14px;
-}
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+} 
+  .dp {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba(255,255,255,0.4);
+  margin-bottom: 20px;
+  }
 </style>
 </head>
 
@@ -61,6 +71,7 @@ h1 {
 </nav>
 
 <section id="home">
+  <img src="dp.jpg" class="dp">
   <h1>PROXY</h1>
   <p>Sigma Developer</p>
 
